@@ -80,7 +80,7 @@ Edit your posts index view `app/views/posts/index.html.erb` with the following c
     <script type="text/javascript">
       $(function() {
         // Blog is the app name
-        window.router = new Blog.Routers.PostsRouter({posts: <%= @posts.to_json.html_safe -%>});
+        window.router = new Blog.Routers.PostsRouter({posts: <%= @posts.to_json.html_safe %>});
         Backbone.history.start();
       });
     </script>
